@@ -36,7 +36,7 @@ const ImageGallery = ({ loadMore, searchQuery, page }) => {
   }, [searchQuery]);
 
   useEffect(() => {
-    if (searchQuery !== '' && page !== 1) {
+    if (searchQuery !== '' && page > 1) {
       fetchMorePhotos();
     }
 
